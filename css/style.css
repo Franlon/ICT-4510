@@ -1,9 +1,8 @@
 /*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
- @import url('https://bunsburgershop.com/wp-content/uploads/2016/09/Allstar4.woff');
- @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
- @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
- @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
 /*--------------------------------------------------------------------- basic ---------------------------------------------------------------------*/
  body {
      color: #666666;
@@ -318,9 +317,9 @@ h1, h2, h3, h4, h5, h6 {
      border: solid #eaeaea 1px;
 }
  .button_user a:hover, .button_user a:focus, .button_user a.active {
-     background: #e3d105;
+     background: #dd1f27;
      color: #fff;
-     border-color: #e3d105;
+     border-color: #dd1f27;
      color: #222;
 }
  #sidebarCollapse {
@@ -529,7 +528,7 @@ h1, h2, h3, h4, h5, h6 {
 }
  .about .about_img {
      height: 100%;
-     background: #d8b00f;
+     background: #dd1f27;
      margin-top: 90px;
 }
  .about .about_img figure {
@@ -776,7 +775,7 @@ h1, h2, h3, h4, h5, h6 {
      font-size: 17px;
 }
  .copyright a:hover {
-    color: #d8b00f;
+    color: #dd1f27;
 }
  .owl-dot {
      background: #15cfe5 !important;
@@ -860,11 +859,11 @@ h1, h2, h3, h4, h5, h6 {
 }
  #sidebar ul li a:hover {
      color: #fff;
-     background: #d8b00f;
+     background: #dd1f27;
 }
  #sidebar ul li.active > a, a[aria-expanded="true"] {
      color: #fff;
-     background: #d8b00f;
+     background: #dd1f27;
 }
  a[data-toggle="collapse"] {
      position: relative;
