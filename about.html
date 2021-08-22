@@ -78,17 +78,10 @@
                 <div class="col-md-9">
                     <div class="full">
                         <div class="right_header_info">
-                            <ul>
+                            <ul name="top-menu">
                                 <li class="dinone">Contact Us : <img style="margin-right: 15px;margin-left: 15px;" src="images/phone_icon.png" alt="#"><a href="#">987-654-3210</a></li>
                                 <li class="dinone"><img style="margin-right: 15px;" src="images/mail_icon.png" alt="#"><a href="#">demo@gmail.com</a></li>
                                 <li class="dinone"><img style="margin-right: 15px;height: 21px;position: relative;top: -2px;" src="images/location_icon.png" alt="#"><a href="#">104 New york , USA</a></li>
-                                <li class="button_user"><a class="button active" href="#">Login</a><a class="button" href="#">Register</a></li>
-                                <li><img style="margin-right: 15px;" src="images/search_icon.png" alt="#"></li>
-                                <li>
-                                    <button type="button" id="sidebarCollapse">
-                                        <img src="images/menu_icon.png" alt="#">
-                                    </button>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -112,28 +105,18 @@
 <!-- about -->
 <div class="about">
     <div class="container">
-      <div class="row">
-         <div class="col-md-12">
-             <div class="title">
-                <i><img src="images/title.png" alt="#"/></i>
-                
-                <span>It is a long established fact that a reader will be distracted by the readable content of a
-                   <br> page when looking at its layout. The point of using Lorem
-                </span>
-             </div>
-          </div>
-       </div>
        <div class="row">
          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
              <div class="about_box">
-                 <h3>Best Food</h3>
-                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscureContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard </p>
-                 <a href="#">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                 <h3>Out Story</h3>
+                 <p>Founded by Bengie and Fidel in 2011, two young entrepreneurs with passion for simplicity and tasty food. Together they established the philosophies that drive our corporate mission statement:
+                 <br/><br/>Focused on the Freshest high quality ingredients. Working hard every day to serve the juiciest Burgers and provide the Best service in a friendly environment for the people. Nobody does it better than Buns Burger Shop.
+                 <br/><br/>Buns Burger Shop prides itself on providing the Best burgers in Puerto Rico. With a simple tasty menu where you could also find: Dogs, Hand Cut Fries, Sandwiches, Shakes, Soft Drinks, Wine and Craft Beers. We take careful attention while sourcing our ingredients and that’s why we only use 100% Angus Beef, always fresh NEVER FROZEN.</p>
              </div>
          </div>
           <div class="col-xl-5 col-lg-5 col-md-10 col-sm-12 about_img_boxpdnt">
              <div class="about_img">
-                 <figure><img src="images/about-img.jpg" alt="#/"></figure>
+                 <figure><img src="images/bengie-fidel.jpg"></figure>
              </div>
          </div>      
        </div> 
@@ -163,29 +146,8 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
-     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    
-     <script src="js/jquery-3.0.0.min.js"></script>
-   <script type="text/javascript">
-        $(document).ready(function() {
-            $("#sidebar").mCustomScrollbar({
-                theme: "minimal"
-            });
-
-            $('#dismiss, .overlay').on('click', function() {
-                $('#sidebar').removeClass('active');
-                $('.overlay').removeClass('active');
-            });
-
-            $('#sidebarCollapse').on('click', function() {
-                $('#sidebar').addClass('active');
-                $('.overlay').addClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-        });
-    </script>
-
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script defer src="js/menu.js"></script>
 </body>
-
 </html>
