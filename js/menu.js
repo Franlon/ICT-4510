@@ -45,6 +45,7 @@
 		document.querySelector("[name=top-menu]").appendChild(logoutListItem);
 		
 		addMenuButton();
+		addSidebarItems();
  	}
  
 function addMenuButton(){
@@ -61,6 +62,31 @@ function addMenuButton(){
 	menuListitem.appendChild(button);
 	
 	document.querySelector("[name=top-menu]").appendChild(menuListitem);
+}
+
+function addSidebarItems(){
+
+	let form = document.createTextNode("Order Now");
+
+	let formLink = document.createElement("a");
+ 	formLink.setAttribute('href', 'form.html');
+ 	formLink.appendChild(form);
+ 	
+ 	let formListitem = document.createElement("li");
+	formListitem.appendChild(formLink);
+ 	
+ 	document.querySelector("[name=side-menu]").appendChild(formListitem);
+ 	
+ 	let orders = document.createTextNode("Your BUNS");
+ 	
+ 	let ordersLink = document.createElement("a");
+ 	ordersLink.setAttribute('href', 'orders.html');
+ 	ordersLink.appendChild(orders);
+ 	
+ 	let ordersListitem = document.createElement("li");
+	ordersListitem.appendChild(ordersLink);
+ 	
+ 	document.querySelector("[name=side-menu]").appendChild(ordersListitem);	
 }
 
  $(document).ready(function() {

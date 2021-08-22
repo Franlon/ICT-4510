@@ -403,8 +403,8 @@ h1, h2, h3, h4, h5, h6 {
      margin-top: 20px;
 }
  .main_bt_border:hover, .main_bt_border:focus {
-     background: #e3d105;
-     border-color: #e3d105;
+     background: #dd1f27;
+     border-color: #dd1f27;
      color: #222;
 }
  .theme_color {
