@@ -25,6 +25,8 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 </head>
 <body class="main-layout about_page">
     <div class="loader_bg">
@@ -104,8 +106,9 @@
                  				<br/><br/>Buns Burger Shop <br/> <strong>Caguas</strong> · (787) 747-6666 <br/> 11AM–10PM <br/> Dine-in · Takeout · No delivery</p>
              				</div>
          				</div>
-         	
     				</div>
+    				<br/>
+    				<div id="map"></div>
   				</div>
 			</div>
     		<footer>
@@ -129,5 +132,6 @@
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/jquery-3.0.0.min.js"></script>
     <script defer src="js/menu.js"></script>
+  	<script defer src="js/about.js"></script>
 </body>
 </html>
