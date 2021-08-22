@@ -37,6 +37,12 @@
 		let logoutListItem = document.createElement("li");
 		logoutListItem.setAttribute('class', 'button_user');
 		logoutListItem.appendChild(link);
+		logoutListItem.addEventListener('click',function(event){                          
+        
+        	sessionStorage.removeItem('user');
+        	window.location.reload(true);
+ 		}); 
+		
 		document.querySelector("[name=top-menu]").appendChild(logoutListItem);
 		
 		addMenuButton();
