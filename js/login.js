@@ -1,8 +1,8 @@
 /*
    Abdiel L. Franco
    ICT-4510
-   July 25, 2021
-   Assignment Week #6: Sending user credentials to Heroku server, storing user profile in session, hiding form and showing welcome message
+   Summer 2021
+   Logins using user credentials, store user information in the session storage and reloads Home page upon succesful authentication
 */
 
 function login() {
