@@ -1,6 +1,4 @@
 
-//let user = JSON.parse(sessionStorage.getItem('user'));
-
 if (user !== null) {
 
 	let apiKey = user.user.api_key;
@@ -15,17 +13,44 @@ if (user !== null) {
 		}
 	}).then(response => response.json())
 	  .then(result => {
-			
-		let items = result.menu;
-		console.log(items);
-		items.forEach(item => addOrder(item));
+		addOrders(result.menu);	
 	})
 	
 }else{
 	alert("Please login");
 }
 
-function addOrder(order){
+function addOrders(items){
+
+	var orders = document.querySelector("[name=orders]");
+
+	for (let i = 0; i < items.length; i++) {
+  	
+  		let div = addOrder(items[i]);
+  
+  		if (i%3 === 0) {
+  			let row = document.createElement("div");
+			row.setAttribute('class', 'row');
+			row.setAttribute('id', (i / 3));
+			row.appendChild(div);
+  		
+  			orders.appendChild(row);
+  		}else{
+  			let id = Math.trunc(i/3);
+  			let row = document.getElementById(id);
+  			row.appendChild(div);
+  			orders.appendChild(row);
+  			
+  			if (row.childElementCount === 3) {
+  			
+  				let br = document.createElement("br");
+				orders.appendChild(br);
+  			}
+  		}
+	} 	
+}
+
+function addOrder(order) {
 
 	let h3 = document.createTextNode(order.item);
 	let header = document.createElement("h3");
@@ -44,83 +69,5 @@ function addOrder(order){
 	bottom.setAttribute('class', 'col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom');
 	bottom.appendChild(box);
 	
-	let row = document.createElement("div");
-	row.setAttribute('class', 'row');
-	row.appendChild(bottom);
-
-	let br = document.createElement("br");
-	
-	document.querySelector("[name=orders]").appendChild(row);
-	document.querySelector("[name=orders]").appendChild(br);
+	return bottom;
 }
-
-/*
-
-
- <div class="row">
-      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom">
-        <div class="blog_box">
-          <div class="blog_img_box">
-            <figure><img src="images/blog_img1.png" alt="#"/>
-            </figure>
-          </div>
-          <h3>Spicy Barger</h3>
-          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
-        </div>
-      </div>
-       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom">
-        <div class="blog_box">
-          <div class="blog_img_box">
-            <figure><img src="images/blog_img2.png" alt="#"/>
-            </figure>
-          </div>
-          <h3>Egg & Tosh</h3>
-          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
-        </div>
-      </div>
-       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-        <div class="blog_box">
-          <div class="blog_img_box">
-            <figure><img src="images/blog_img3.png" alt="#"/>
-            </figure>
-          </div>
-          <h3>Pizza</h3>
-          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
-        </div>
-      </div>
-    </div>
-    <br/>
-     <div class="row">
-      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom">
-        <div class="blog_box">
-          <div class="blog_img_box">
-            <figure><img src="images/blog_img1.png" alt="#"/>
-            </figure>
-          </div>
-          <h3>Spicy Barger</h3>
-          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
-        </div>
-      </div>
-       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom">
-        <div class="blog_box">
-          <div class="blog_img_box">
-            <figure><img src="images/blog_img2.png" alt="#"/>
-            </figure>
-          </div>
-          <h3>Egg & Tosh</h3>
-          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
-        </div>
-      </div>
-       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-        <div class="blog_box">
-          <div class="blog_img_box">
-            <figure><img src="images/blog_img3.png" alt="#"/>
-            </figure>
-          </div>
-          <h3>Pizza</h3>
-          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
-        </div>
-      </div>
-    </div>
-
-*/
