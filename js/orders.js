@@ -1,3 +1,9 @@
+/*
+   Abdiel L. Franco
+   ICT-4510
+   Summer 2021
+   Fetches and displays the different orders (menu items) that the logged user created
+*/
 
 if (user !== null) {
 

@@ -1,3 +1,9 @@
+/*
+   Abdiel L. Franco
+   ICT-4510
+   Summer 2021
+   Loads maps using specified coordinates and show markers for the different shops
+*/
 
 const coordinates = [18.3585198, -66.0621615];
 const accessToken = "pk.eyJ1IjoiZnJhbmxvbiIsImEiOiJja3JubWgzcGsyd2Z3MnVvMmN0aXp1Mm9iIn0.v_gA0VaxmFWu-I4UZZdvCg";

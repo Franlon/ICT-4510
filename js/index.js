@@ -1,8 +1,8 @@
 /*
    Abdiel L. Franco
    ICT-4510
-   August 22, 2021
-   Assignment Week #10: Moved this carousel script from the template to its own file
+   Summer 2021
+   Moved this carousel script from the template to its own file
 */
   
 $(document).ready(function() {

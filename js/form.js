@@ -1,3 +1,9 @@
+/*
+   Abdiel L. Franco
+   ICT-4510
+   Summer 2021
+   Creates and safes a new order for the logged user
+*/
 
 function sendOrder() {
 
