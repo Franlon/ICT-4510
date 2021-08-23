@@ -689,6 +689,7 @@ h1, h2, h3, h4, h5, h6 {
      padding: 13px 0px;
      width: 100%;
      font-size: 18px;
+     border-style: none;
 }
  .send:hover {
      background: #000;
