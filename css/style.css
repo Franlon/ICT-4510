@@ -938,4 +938,14 @@ h1, h2, h3, h4, h5, h6 {
 #map { 
 	height: 500px;
 }
+
+#owl-demo .item{
+	margin: 3px;
+}
+
+#owl-demo .item img{
+	display: block;
+    width: 100%;
+    height: auto;
+}
  
